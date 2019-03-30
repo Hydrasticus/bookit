@@ -7,6 +7,10 @@ import java.util.List;
 public interface TodosService {
 
     Todo getTodo(Long id);
+
     List<Todo> findAllTodos();
+
     Todo addTodo(Todo todo);
+
+    void saveAll(List<Todo> todos);
 }
